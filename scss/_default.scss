@@ -1,0 +1,27 @@
+html, body, .container-fluid {
+	height: 100%;
+}
+
+body {	
+	font-family: $font;
+	font-size: 18px;
+
+	@media screen and (max-width: $resolution-md) {
+		font-size: 16px;
+	}
+
+	a,
+	a:hover, 
+	a:focus {
+		text-decoration: none;
+		color: $main-color;
+	}
+}
+
+textarea { 
+	resize: none; 
+}
+
+.content {
+	@include make-row();
+}
