@@ -21,8 +21,8 @@
 				<div class="bottom">
 					<div class="media">
 						<?php
-							echo '<a href=""><img src="'.get_template_directory_uri().'/img/fb.png" class="img-responsive" alt="Facebook"></a>' 
-								.'<a href=""><img src="'.get_template_directory_uri().'/img/li.png" class="img-responsive" alt="LinkedIn"></a>';
+							echo '<a href="'.$facebook.'"><img src="'.get_template_directory_uri().'/img/fb.png" class="img-responsive" alt="Facebook"></a>' 
+								.'<a href="'.$linkedin.'"><img src="'.get_template_directory_uri().'/img/li.png" class="img-responsive" alt="LinkedIn"></a>';
 						?>
 						
 						
