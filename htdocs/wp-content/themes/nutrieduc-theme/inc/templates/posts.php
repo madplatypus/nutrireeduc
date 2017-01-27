@@ -7,7 +7,7 @@
 					<div class="article-info">
 						<figure onclick="location.href='<?php the_permalink() ?>';">
 							<h3><?php the_title_attribute(); ?></h3>
-							<?php if (has_post_thumbnail()) the_post_thumbnail();
+							<?php if (has_post_thumbnail()) the_post_thumbnail('thumbnail');
 							else echo '<img class="img-responsive" src="' . get_template_directory_uri(). '/img/img-articles.jpg" alt="">';?>
 							
 						
