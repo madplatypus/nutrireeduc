@@ -22,13 +22,6 @@
 	<?php echo'<link rel="stylesheet" href="'.get_template_directory_uri().'/css/vendor/plugins.css">'?>
 	<?php echo'<link rel="stylesheet" href="'.get_template_directory_uri().'/css/style.css">'?>
 
-	<?php echo get_template_directory_uri().'/css/style.css"'?>
+
 </head>
 <body>
-
-<!--
-	<link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro">
-	<?php //echo'<link rel="stylesheet" href="'.get_template_directory_uri().'/css/vendors/plugins.css">'?>
-	<?php //echo'<link rel="stylesheet" href="'.get_template_directory_uri().'/css/style.css">'?>
-
-</head> -->
