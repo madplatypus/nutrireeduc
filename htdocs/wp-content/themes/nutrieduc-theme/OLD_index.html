@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Site da Denise :)</title>
-
-	 <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Yanni Fraga">
     <meta name="robots" content="index, follow">
@@ -16,13 +16,15 @@
     <meta property="og:image" content="">
 	<meta property="og:description" content="">
 
+	<title>Nutri Reeduc</title>
+
 	<link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro">
-	<link rel="stylesheet" href="css/vendors/plugins.css">
+	<link rel="stylesheet" href="css/vendor/plugins.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
-	<div class="container-fluid">
+	<div class="container-fluid" id="home">
 		<div class="content-image">
 			<nav class="navbar">
 				<div class="container-fluid">
@@ -32,14 +34,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="index.html">Site da Denise</a>
+						<a class="navbar-brand" href="index.html">Nutri Reeduc</a>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Sobre</a></li>
-							<li><a href="#">Contato</a></li>
+							<li><a class="active" href="#home">Home</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#about">Sobre</a></li>
+							<li><a href="#contact">Contato</a></li>
 						</ul>
 					</div>
 				</div>
@@ -53,79 +55,74 @@
 			</header>
 		</div>
 
-		<section class="blog">
+		<section class="blog-index" id="blog">
 			<div class="content">
-				<div class="articles">
-					<h2>Mais sobre nutrição</h2>					
-					<div class="article-info">
-						<figure onclick="location.href='http://www.google.com';">
-							<h3>Algum título interessante</h3>
-							<img class="img-responsive" src="img/img-articles.jpg" alt="">
-							<figcaption><p>Quero saber mais</p></figcaption>
-						</figure>
-					</div>	
-					<div class="article-info">
-						<figure onclick="location.href='http://www.google.com';">
-							<h3>Algum título interessante</h3>
-							<img class="img-responsive" src="img/img-articles.jpg" alt="">
-							<figcaption><p>Quero saber mais</p></figcaption>
-						</figure>
-					</div>
-					<div class="article-info">
-						<figure onclick="location.href='http://www.google.com';">
-							<h3>Algum título interessante</h3>		
-							<img class="img-responsive" src="img/img-articles.jpg" alt="">
-							<figcaption><p>Quero saber mais</p></figcaption>
-						</figure>
-					</div>
+				<h2>Mais sobre nutrição</h2>
+				<div class="article-info">
+					<figure onclick="location.href='http://www.google.com';">
+						<h3>Algum título interessante 1</h3>
+						<img class="img-responsive" src="img/img-articles.jpg" alt="">
+						<figcaption><p>Quero saber mais</p></figcaption>
+					</figure>
+				</div>	
+				<div class="article-info">
+					<figure onclick="location.href='http://www.google.com';">
+						<h3>Algum título interessante 2</h3>
+						<img class="img-responsive" src="img/img-articles.jpg" alt="">
+						<figcaption><p>Quero saber mais</p></figcaption>
+					</figure>
+				</div>
+				<div class="article-info">
+					<figure onclick="location.href='http://www.google.com';">
+						<h3>Algum título interessante 3</h3>		
+						<img class="img-responsive" src="img/img-articles.jpg" alt="">
+						<figcaption><p>Quero saber mais</p></figcaption>
+					</figure>
 				</div>
 			</div>
-			<div class="content">	
-				<div class="articles">
-					<div class="article-info">
-						<figure onclick="location.href='http://www.google.com';">
-							<h3>Algum título interessante</h3>	
-							<img class="img-responsive" src="img/img-articles.jpg" alt="">
-							<figcaption><p>Quero saber mais</p></figcaption>
-						</figure>
-					</div>	
-					<div class="article-info">
-						<figure onclick="location.href='http://www.google.com';">
-							<h3>Algum título muito muito muito muito muito muito muito muito interessante</h3>	
-							<img class="img-responsive" src="img/img-articles.jpg" alt="">
-							<figcaption><p>Quero saber mais</p></figcaption>
-						</figure>
-					</div>
-					<div class="article-info">
-						<figure onclick="location.href='http://www.google.com';">
-							<img class="img-responsive" src="img/img-articles.jpg" alt="">
-							<figcaption><p>Ver todos os artigos</p></figcaption>
-						</figure>
-					</div>
+			<div class="content">
+				<div class="article-info xs-hidden">
+					<figure onclick="location.href='http://www.google.com';">
+						<h3>Algum título interessante 4</h3>	
+						<img class="img-responsive" src="img/img-articles.jpg" alt="">
+						<figcaption><p>Quero saber mais</p></figcaption>
+					</figure>
+				</div>	
+				<div class="article-info xs-hidden">
+					<figure onclick="location.href='http://www.google.com';">
+						<h3>Algum título muito muito muito muito muito muito muito muito interessante 5</h3>	
+						<img class="img-responsive" src="img/img-articles.jpg" alt="">
+						<figcaption><p>Quero saber mais</p></figcaption>
+					</figure>
+				</div>
+				<div class="article-info">
+					<figure class="all-posts" onclick="location.href='blog.html';">
+						<img class="img-responsive" src="img/img-articles.jpg" alt="">
+						<figcaption><p>Ver todos os posts</p></figcaption>
+					</figure>
 				</div>
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="content">
 				<div class="about-info">
 					<h2>Sobre mim</h2>
 					<article>
 						<p>Denise Villar</p>
 						<p>Algum texto sobre a Denise. Nonono nononono nononono. Texto texto texto texto texto texto texto.</p>
+						<p>Algum texto sobre a Denise. Nonono nononono nononono. Texto texto texto texto texto texto texto.</p>
+						<p>Algum texto sobre a Denise. Nonono nononono nononono. Texto texto texto texto texto texto texto.</p>
+						<p>Algum texto sobre a Denise. Nonono nononono nononono. Texto texto texto texto texto texto texto.</p>
+						<p>Algum texto sobre a Denise. Nonono nononono nononono. Texto texto texto texto texto texto texto.</p>
 					</article>						
 					<!-- <img src="" alt=""> -->
 					<div class="photo"></div><!-- delete -->
 				</div>
-			</div>	
-			<div class="content">
-				<div class="button">	
-					<button type="submit" class="btn btn-success">Saiba mais</button>
-				</div>
 			</div>
 		</section>
 
-		<div class="content-image">
+		<div class="content-image" id="contact">
 			<footer>
 				<h2>Entre em Contato</h2>
 				<form>
@@ -160,6 +157,7 @@
 	<!-- <a href='http://br.freepik.com/fotos-gratis/vista-de-cima-de-carne-com-legumes-frescos_910053.htm'>Designed by Freepik</a> -->
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
