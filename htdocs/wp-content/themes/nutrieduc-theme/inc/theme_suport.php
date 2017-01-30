@@ -33,4 +33,12 @@ function nutrieduc_ultimos_posts(){
 	}
 	wp_reset_query();
 
-}?>
+}
+//================
+//Comentarios
+//================
+
+add_theme_support('html5', array('comment-list','comment-form','search-form', 'gallery','caption'));
+
+
+?>
