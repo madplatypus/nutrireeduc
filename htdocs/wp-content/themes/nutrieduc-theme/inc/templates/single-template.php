@@ -35,17 +35,21 @@
 			<div>
 				<p><input type="text" placeholder="Pesquisar..." /></p>
 			</div>
+			<div><a href="">
+				<h3>Arquivo</h3>
+				<?php wp_get_archives('type=yearly'); ?>
+			</a></div>
 			<div>
 				<h3>Tópicos Recentes</h3>
 				<?php nutrieduc_ultimos_posts();?>
 			</div>
 			<div>
-<ul>
-    <?php wp_list_categories( array(
-        'orderby'    => 'name',
-        'show_count' => false,
-    ) ); ?> 
-</ul>
+				<ul>
+    				<?php wp_list_categories( array(
+        			'orderby'    => 'name',
+        			'show_count' => false,
+    				) ); ?> 
+				</ul>
 			</div>
 		</div></div>
 		

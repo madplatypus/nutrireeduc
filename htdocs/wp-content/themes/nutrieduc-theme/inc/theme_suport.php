@@ -25,18 +25,12 @@ function nutrieduc_posted_footer(){
 }
 
 function nutrieduc_ultimos_posts(){
-	$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); 
-	if ( $wpb_all_query->have_posts() ) :
 
-	$i=0;
-	while ($wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
-		echo '<p>'. the_title_attribute() .'</p>';
-		if ($i<5) $i++;
-		else break;
+	$args = array( 'numberposts' => '5' );
+	$recent_posts = wp_get_recent_posts( $args );
+	foreach( $recent_posts as $recent ){
+		echo '<p><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></p>';
+	}
+	wp_reset_query();
 
-
-
-	endwhile;
-
-	endif;
-}
+}?>
