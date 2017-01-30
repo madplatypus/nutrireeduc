@@ -40,10 +40,12 @@
 				<?php nutrieduc_ultimos_posts();?>
 			</div>
 			<div>
-				<h3>Categorias</h3>
-				<p>Categoria 1</p>
-				<p>Categoria 2</p>
-				<p>Categoria 3</p>
+<ul>
+    <?php wp_list_categories( array(
+        'orderby'    => 'name',
+        'show_count' => false,
+    ) ); ?> 
+</ul>
 			</div>
 		</div></div>
 		
