@@ -1,5 +1,6 @@
 <div class="container-fluid" id="home">
-		<div class="content">
+		<div>
+			<div class="content">
 			<nav class="navbar">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -30,6 +31,12 @@
 				}
 			}
 			?>
+			<div id="comentario">
+				<?php 
+				if (comments_open() ) comments_template();
+				?>
+			</div>
+			</div>
 		</div>
 		<div style="margin-top: 100px;">
 			<div>
