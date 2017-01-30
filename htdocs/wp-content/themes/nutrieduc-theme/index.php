@@ -9,10 +9,6 @@
 	$facebook = esc_attr( get_option( 'facebook' ) );
 	$linkedin = esc_attr( get_option( 'linkedin' ) );
 	
-		//require get_template_directory() . '/inc/templates/titulo.php';
-		//require get_template_directory() . '/inc/templates/posts.php';
-		//require get_template_directory() . '/inc/templates/sobre.php';
-		//require get_template_directory() . '/inc/templates/contato.php';
 		require get_template_directory() . '/inc/templates/template-home.php';
 	?>
 

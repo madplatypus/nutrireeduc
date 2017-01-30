@@ -9,7 +9,7 @@
 		<div class="entry-meta"><?php echo nutrieduc_posted_meta(); ?></div>
 	<div class="entry-content">
 		<?php if (has_post_thumbnail() ): ?>
-			<div><?php the_post_thumbnail(); ?></div>
+			<div><?php the_post_thumbnail(array(750,750)); ?></div>
 		<?php endif; ?>
 		
 		<div class="entry-excerpt">

@@ -23,3 +23,20 @@ function nutrieduc_posted_meta(){
 function nutrieduc_posted_footer(){
 	return 'tags, list and comment link';
 }
+
+function nutrieduc_ultimos_posts(){
+	$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); 
+	if ( $wpb_all_query->have_posts() ) :
+
+	$i=0;
+	while ($wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+		echo '<p>'. the_title_attribute() .'</p>';
+		if ($i<5) $i++;
+		else break;
+
+
+
+	endwhile;
+
+	endif;
+}
