@@ -140,6 +140,11 @@ footer {
 		text-align: center;
 	}
 
+	.form-control:focus {
+		border-color: rgba($main-color, 0.8);
+		box-shadow: 0 1px 5px rgba($main-color,0.5);
+	}
+
 	.btn-success {
 		font-weight: bold;
 		padding-left: 2.777em;

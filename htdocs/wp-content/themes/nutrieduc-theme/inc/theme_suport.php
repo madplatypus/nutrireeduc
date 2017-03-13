@@ -21,7 +21,23 @@ function nutrieduc_posted_meta(){
 }
 
 function nutrieduc_posted_footer(){
-	return 'tags, list and comment link';
+
+	$comments_num = get_comments_number();
+	if (comments_open() ){
+		if($comments_num==0){
+			$comments = __('0 Comentarios');
+		} elseif($comments_num>1){
+			$comments=$comments_num.__(' Comentarios');
+		} else{
+			$comments = __('1 Comentario');
+		}
+
+	}else{
+		$comments = __('Comentarios fechados');
+	}
+
+
+	return '<div class="post-footer-container"><div class="row"><div class="col-xs-12 col-sm-6">'. get_the_tag_list('<div class="tags-list">',' ','</div>').'<div class="post-footer-container"><div class="row"><div class="col-xs-12 col-sm-6">'. $comments .'</div></div></div>';
 }
 
 function nutrieduc_ultimos_posts(){

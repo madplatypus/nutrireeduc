@@ -43,22 +43,12 @@
 
 			<aside>
 				<section>
-					<?php get_search_form(); ?>
+					<input type="text" placeholder="Pesquisar..." />
 				</section>
 				<section>
 					<h3>Arquivo</h3>
 					<ul>
-						<?php
-						$my_archives=wp_get_archives(array(
-	'type'=>'monthly', 
-	'show_post_count'=>true, 
-	'limit'=>20, 
-	'post_type'=>'post', 
-	'format'=>'html' 
-));
-	
-print_r($my_archives); 
-						?>
+						<?php wp_get_archives('type=yearly'); ?>
 					</ul>
 				</section>
 				<section>

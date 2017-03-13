@@ -1,7 +1,7 @@
 	<div class="container-fluid" id="home">
 		<div class="content-image">
 			<nav class="navbar">
-				<div class="container-fluid">
+				<div class="container-fluid">				
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 							<span class="icon-bar"></span>
@@ -38,8 +38,7 @@
 							<h3><?php the_title_attribute(); ?></h3>
 							<?php if (has_post_thumbnail()) the_post_thumbnail('thumbnail');
 							else echo '<img class="img-responsive" src="' . get_template_directory_uri(). '/img/img-articles.jpg" alt="">';?>
-							
-						
+													
 							<figcaption><p>Quero saber mais</p></figcaption>
 						</figure>
 					</div>	
@@ -84,7 +83,7 @@
 					</div>
 					<div class="form-group form3">
 						<label for="mensagem">Mensagem:</label>
-						<textarea class="form-control" name="Mensagem" id="Mensagem" rows="7" required></textarea>
+						<textarea class="form-control" name="mensagem" id="mensagem" rows="7" required></textarea>
 					</div>
 					<div class="form-group form3">						
 						<button type="submit" class="btn btn-success">Enviar</button>
