@@ -31,16 +31,6 @@ if ( have_posts() ) : ?>
 
 
 
-<h1 class="archive-title">Categoria: <?php single_cat_title(''); ?></h1>
-<?php
-// Display optional category description
-
- if ( category_description() ) : ?>
-<div class="archive-meta">
-	<?php echo category_description(); ?>
-</div>
-<?php endif; ?>
-</header>
 
 <?php
 
