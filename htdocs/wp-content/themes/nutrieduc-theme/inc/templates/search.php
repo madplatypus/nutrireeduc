@@ -25,20 +25,37 @@
 	<div class="conteudo-blog">
 		<div class="content">
 			<section class="post-content">
-				<?php
-				if( have_posts() ){
-					while ( have_posts() ){
-						the_post();
-						get_template_part( 'inc/templates/content', get_post_format() );
-					}
-				}
-				?>
-				<div class="comentarios">
-					<h3>Comentários</h3><!-- ou qualquer outro nome -->
-					<?php 
-					if (comments_open() ) comments_template();
-					?>
-				</div>		
+<?php 
+// Check if there are any posts to display
+if ( have_posts() ) : ?>
+
+
+
+
+<?php
+
+// The Loop
+
+while ( have_posts() ) : the_post(); ?>
+<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+<small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
+
+<div class="entry">
+
+<?php the_excerpt(); ?>
+
+ <p class="postmetadata"><?php
+  comments_popup_link( 'Sem comentários', '1 comentário', '% comentários', 'comments-link', 'Comentários Desligados');
+?></p>
+</div>
+
+<?php endwhile; 
+
+else: ?>
+<p>Sorry, no posts matched your criteria.</p>
+
+
+<?php endif; ?>
 			</section>	
 
 			<aside>
